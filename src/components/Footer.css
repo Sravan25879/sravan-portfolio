@@ -1,0 +1,119 @@
+/* Footer Styles */
+.footer-section {
+  background: var(--bg-dark-alt);
+  border-top: 1px solid var(--border-subtle);
+  padding: 4rem 0 2rem 0;
+  position: relative;
+}
+
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.footer-student-meta {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--primary-green);
+}
+
+.footer-col-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+}
+
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-nav-list a {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.footer-nav-list a:hover {
+  color: var(--primary-green);
+}
+
+.footer-social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer-social-btn {
+  justify-content: flex-start;
+  font-size: 0.85rem;
+  padding: 0.65rem 1rem;
+}
+
+.back-to-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.back-to-top-btn:hover {
+  color: var(--primary-green);
+  border-color: var(--border-green);
+}
+
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.75rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.deployment-note {
+  font-family: var(--font-mono);
+  font-size: 0.775rem;
+}
+
+@media (max-width: 768px) {
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,180 @@
+/* Stack Flow Component Styles */
+.stack-flow-wrapper {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  margin-bottom: 4rem;
+  box-shadow: var(--shadow-md);
+}
+
+.stack-flow-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.flow-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-yellow);
+  background: var(--accent-yellow-subtle);
+  border: 1px solid var(--border-yellow);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.flow-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.flow-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stack-flow-pipeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.flow-layer-card {
+  position: relative;
+  width: 100%;
+  background: var(--bg-dark-alt);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr 2fr;
+  gap: 1.5rem;
+  align-items: center;
+  transition: all 0.25s ease;
+}
+
+.flow-layer-card:hover {
+  border-color: var(--border-green);
+  transform: scale(1.01);
+}
+
+/* Visually prominent backend card */
+.flow-layer-card.prominent-backend {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(17, 22, 27, 0.95) 100%);
+  border: 1.5px solid var(--primary-green);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.15);
+}
+
+.prominent-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--primary-green);
+  color: var(--text-inverse);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.layer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.layer-step {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.layer-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer-icon.green {
+  color: var(--primary-green);
+}
+
+.layer-icon.yellow {
+  color: var(--accent-yellow);
+}
+
+.layer-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.layer-title-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.layer-subtitle-text {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+}
+
+.layer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: flex-end;
+}
+
+.layer-tag-pill {
+  font-size: 0.775rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+.prominent-backend .layer-tag-pill {
+  border-color: var(--border-green);
+  color: var(--text-primary);
+}
+
+.flow-arrow-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  color: var(--primary-green);
+  opacity: 0.7;
+}
+
+@media (max-width: 850px) {
+  .flow-layer-card {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .layer-tags {
+    justify-content: flex-start;
+  }
+}
