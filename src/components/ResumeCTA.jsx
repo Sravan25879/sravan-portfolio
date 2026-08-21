@@ -54,7 +54,7 @@ const ResumeCTA = () => {
             <div className="resume-actions">
               <a
                 href="/resume.pdf"
-                download="Sravan_Kumar_Reddy_Resume.pdf"
+                download="resume.pdf"
                 className="btn-primary resume-download-btn"
                 onClick={handleResumeDownload}
               >
